@@ -26,14 +26,14 @@ def initial_round
   first_round = deal_card + deal_card
   display_card_total(first_round)
   return first_round
- 
+
 def hit?
   prompt_user
   input = get_user_input
   until input == 'h' || input == 's'
     invalid_command
     prompt_user
-    input = get_user_input 
+    input = get_user_input
   end
   if input == 'h'
     card_total += deal_card
@@ -53,4 +53,3 @@ end
 def runner
   # code runner here
 end
-    
